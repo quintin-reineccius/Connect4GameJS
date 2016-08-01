@@ -11,4 +11,6 @@ export default function clearBoard({ buttons, board, winner }){
       board[rowIndex][columnIndex] = false
     })
   })
+
+  winner.innerHTML = ''
 }

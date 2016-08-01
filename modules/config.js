@@ -15,4 +15,11 @@ module.exports = {
     ['E','E','E','E','E','E','E'],
     ['E','E','E','E','E','E','E'],
   ],
+  wins: {
+    red: 0,
+    black: 0,
+    draw: 0,
+  },
+  winner: document.getElementById('winner'),
+  whosTurn: document.getElementById('whos-turn'),
 }

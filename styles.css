@@ -24,12 +24,13 @@ table button {
   border-radius: 50px;
 }
 
-/*-------colors for game pieces-------*/
+.red {
+  background-color: #c32d2d;
+}
 
-/*background-color: #c32d2d;
-background-color: #524949; */
-
-/*-------colors for game pieces-------*/
+.black {
+  background-color: #1b1616;
+}
 
 h1 {
   margin-bottom: 0;

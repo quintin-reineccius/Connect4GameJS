@@ -1,5 +1,15 @@
-import { buttons } from './config'
+import { buttons, board, whosTurn } from './config'
+
+let currentColor
 
 export default function userMove(column, row){
-  console.log(buttons[row][column])
+  if(currentColor === 'red') {
+    currentColor = 'black'
+    whosTurn.innerHTML = 'Red\'s Turn'
+  }else {
+    currentColor = 'red'
+    whosTurn.innerHTML = 'Black\'s Turn'
+  }
+
+  buttons[row][column].className = currentColor
 }

@@ -8,12 +8,12 @@ module.exports = {
     [...document.querySelectorAll(".row6 > td > button")],
   ],
   board: [
-    ['E','E','E','E','E','E','E'],
-    ['E','E','E','E','E','E','E'],
-    ['E','E','E','E','E','E','E'],
-    ['E','E','E','E','E','E','E'],
-    ['E','E','E','E','E','E','E'],
-    ['E','E','E','E','E','E','E'],
+    [false,false,false,false,false,false,false],
+    [false,false,false,false,false,false,false],
+    [false,false,false,false,false,false,false],
+    [false,false,false,false,false,false,false],
+    [false,false,false,false,false,false,false],
+    [false,false,false,false,false,false,false],
   ],
   wins: {
     red: 0,

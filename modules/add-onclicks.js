@@ -1,5 +1,7 @@
-import { buttons } from './config'
+import { buttons, board, winner, wins } from './config'
 import userMove from './user-move'
+import clearBoard from './clear-board'
+import clearScores from './clear-scores'
 
 let clearBoardButton = document.getElementById('clearBoard')
 let clearScoresButton = document.getElementById('clearScores')
@@ -22,6 +24,6 @@ export default function addOnclicks(){
     })
   }
 
-  // clearBoardButton.onclick = () => FUNCTION()
-  // clearScoresButton.onclick = () => FUNCTION()
+  clearBoardButton.onclick = () => clearBoard({ buttons, board, winner })
+  clearScoresButton.onclick = () => clearScores({ buttons, board, winner, wins })
 }

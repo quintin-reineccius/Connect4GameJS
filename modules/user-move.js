@@ -12,4 +12,5 @@ export default function userMove(column, row){
   }
 
   buttons[row][column].className = currentColor
+  board[row][column] = currentColor
 }

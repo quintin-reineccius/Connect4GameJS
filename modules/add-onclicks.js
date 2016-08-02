@@ -18,9 +18,9 @@ export default function addOnclicks(){
       }
       column++
 
-      button.onclick = function(column, row) {
-        return () => userMove(column - 1, row)
-      }(column, row)
+      button.onclick = function(row, column) {
+        return () => userMove(row, column - 1)
+      }(row, column)
     })
   }
 

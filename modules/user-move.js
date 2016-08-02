@@ -1,4 +1,5 @@
 import { buttons, board, whosTurn } from './config'
+import checkMove from './check-move'
 
 let currentColor
 
@@ -33,4 +34,6 @@ export default function userMove(row, column){
   buttons[num][column].className = currentColor
   buttons[num][column].disabled = true
   board[num][column] = currentColor
+
+  checkMove({num, column, board, currentColor})
 }

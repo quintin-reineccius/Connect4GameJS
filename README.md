@@ -1,4 +1,4 @@
-# TIC TAC TOE JS GAME
+# CONNECT 4 JS GAME
 
 > CircleCI
 

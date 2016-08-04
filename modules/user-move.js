@@ -12,23 +12,12 @@ export default function userMove(row, column){
     whosTurn.innerHTML = 'Black\'s Turn'
   }
 
-  //wtf why does this work definely needs refactoring
   let num = 5
 
-  if (buttons[num][column].disabled === true){
-    num -= 1
-  }
-  if (buttons[num][column].disabled === true){
-    num -= 1
-  }
-  if (buttons[num][column].disabled === true){
-    num -= 1
-  }
-  if (buttons[num][column].disabled === true){
-    num -= 1
-  }
-  if (buttons[num][column].disabled === true){
-    num -= 1
+  for(let i in buttons){
+    if (buttons[i][column].disabled === true){
+      num -= 1
+    }
   }
 
   buttons[num][column].className = currentColor

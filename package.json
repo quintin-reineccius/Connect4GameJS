@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack --watch",
-    "test": "mocha \"tests\" --require tests/setup --recursive --compilers js:babel-register"
+    "test": "mocha \"tests\" --require tests/setup --recursive --compilers js:babel-register",
+    "local-test": "mocha \"tests\" --require tests/setup --recursive --compilers js:babel-register --watch"
   },
   "repository": {
     "type": "git",

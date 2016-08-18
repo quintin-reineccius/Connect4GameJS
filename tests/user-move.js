@@ -12,7 +12,7 @@ describe('userMove', () => {
     expect(whosTurn.innerHTML).to.equal('Black\'s Turn')
   })
 
-  it('second move: should drop black game piece in the middle of the bottom row if a user clicks the 4rd row', () => {
+  it('second move: should drop black game piece in the middle of the bottom row if a user clicks the 4th row', () => {
     userMove(3, 3)
 
     expect(buttons[5][3].classList.contains('black')).to.equal(true)

@@ -5,7 +5,7 @@ export default function columnCheck({num, column, board, currentColor}){
     .filter(item => item === currentColor)
     .length
 
-  console.log(currentColor + ': column: ' + currentColumnCheck);
+  // console.log(currentColor + ': column: ' + currentColumnCheck);
 
   if(currentColumnCheck === 4){
     return true
